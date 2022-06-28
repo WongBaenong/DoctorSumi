@@ -1,0 +1,33 @@
+@import "reset.css";
+
+body {
+  background-color: beige;
+}
+
+.map {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  transform: rotate(45deg);
+}
+
+.block {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+}
+
+.char {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #aabbcc;
+  transition: left linear 0.3s, top linear 0.3s;
+}
